@@ -8,10 +8,10 @@ const functions = {
     undefinedValue: () => undefined,
     falsyValue: () => '',
     truthyValue: () => 'Kunal',
-    createUser: () => ({ firstName: 'Kunal', lastName: 'Mukherjee'}),
+    createUser: () => ({ firstName: 'Kunal', lastName: 'Mukherjee' }),
     fetchFirstUser: () => axios('https://jsonplaceholder.typicode.com/users/1')
-                            .then(res => res.data)
-                            .catch(err => 'err')
+        .then(res => res.data)
+        .catch(err => 'err')
 };
 
 module.exports = functions;
